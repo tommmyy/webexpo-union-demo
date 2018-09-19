@@ -1,0 +1,26 @@
+{
+	"name": "webexpo-widget-newsletter",
+	"version": "0.1.0",
+	"private": true,
+	"license": "UNLICENSED",
+	"main": "src/newsletter.widget.js",
+	"engines": {
+		"node": ">=8"
+	},
+	"dependencies": {
+		"prop-types": "^15.6.2",
+		"ramda": "^0.25.0",
+		"ramda-extension": "^0.4.0",
+		"react": "^16.4.1",
+		"react-dom": "^16.4.1",
+		"react-redux": "^5.0.7",
+		"rebass": "^2.1.0",
+		"redux-extensible-store": "^0.1.1",
+		"redux-form": "^7.4.2",
+		"styled-components": "^3.4.5",
+		"webexpo-components": "0.1.0"
+	},
+	"devDependencies": {
+		"enzyme": "^3.3.0"
+	}
+}

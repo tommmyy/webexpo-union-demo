@@ -1,0 +1,24 @@
+{
+	"name": "webexpo-components",
+	"private": true,
+	"version": "0.1.0",
+	"license": "UNLICENSED",
+	"description": "Common UI components used in Cardif SSC portal.",
+	"main": "src/index.js",
+	"devDependencies": {
+		"babel-core": "^6.26.3",
+		"prop-types": "^15.6.2",
+		"react": "^16.4.1",
+		"react-dom": "^16.4.1"
+	},
+	"dependencies": {
+		"ramda": "^0.25.0",
+		"ramda-extension": "^0.4.0",
+		"rebass": "^2.1.0"
+	},
+	"peerDependencies": {
+		"prop-types": "^15.6.2",
+		"react": "^16.4.1",
+		"react-dom": "^16.4.1"
+	}
+}
