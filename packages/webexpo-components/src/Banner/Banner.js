@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Banner as RebassBanner, Heading, Text } from 'rebass';
 import bg from './bg.jpg';
-import parrotBg from './parrot.gif';
+import parrotBg from './bg2.gif';
 
 class Banner extends Component {
 	state = { hover: false };
