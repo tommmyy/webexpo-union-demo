@@ -10,11 +10,11 @@ module.exports = ({ target }) => ({
 				},
 				apps: [
 					{
-						name: 'webexpo-app-theme',
-						publicPath: '/webexpo-demo/wp-content/themes/twentyfifteen/webexpo-app-theme/',
+						name: 'webexpo-app-twentyfifteen',
+						publicPath: '/webexpo-demo/wp-content/themes/twentyfifteen/webexpo-app-twentyfifteen/',
 						proxy: {
 							target: 'http://192.168.64.5',
-							publicPath: '/webexpo-demo/wp-content/themes/twentyfifteen/webexpo-app-theme/',
+							publicPath: '/webexpo-demo/wp-content/themes/twentyfifteen/webexpo-app-twentyfifteen/',
 						},
 					},
 				],

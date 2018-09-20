@@ -39,7 +39,7 @@
 		"build": "react-union-scripts build --target wordpress",
 		"deploy": "yarn build && node tools/deploy",
 		"deploy:production": "yarn build --release && node tools/deploy",
-		"start": "react-union-scripts start --app webexpo-app-theme",
+		"start": "react-union-scripts start --app webexpo-app-twentyfifteen",
 		"start:wordpress": "yarn start --proxy --target wordpress",
 		"test": "react-union-scripts test",
 		"lint": "eslint --cache --ignore-path .gitignore --ext .js ./"
