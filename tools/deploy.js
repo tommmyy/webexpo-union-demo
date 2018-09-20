@@ -4,7 +4,7 @@ const path = require('path');
 
 const resolvePath = x => path.resolve(__dirname, '../', x);
 
-const wordpressPath = resolvePath('../webexpo-demo/wp-content/themes/twentyfifteen/webexpo-app-theme');
+const wordpressPath = resolvePath('../webexpo-demo/wp-content/themes/twentyfifteen/webexpo-app-twentyfifteen');
 
 console.log('🚀 Starting deploy to Wordpress 🚀');
 
@@ -12,7 +12,7 @@ console.log('Cleaning old files...');
 fs.emptyDirSync(wordpressPath);
 
 console.log('Copying new files...');
-fs.copySync(resolvePath('./build/webexpo-app-theme'), wordpressPath);
+fs.copySync(resolvePath('./build/webexpo-app-twentyfifteen'), wordpressPath);
 
 console.log('🚀 Successfuly done. 🚀');
 

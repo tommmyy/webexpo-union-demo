@@ -3,18 +3,27 @@ module.exports = ({ target }) => ({
 		widgetPattern: ['webexpo-widget'],
 		appPattern: ['webexpo-app'],
 	},
+	devServer: {
+		port: 3301,
+	},
 	...(target === 'wordpress'
 		? {
 				outputMapper: {
 					js: 'js',
 				},
+				devServer: {
+					port: 3300,
+				},
+				proxy: {
+					port: 3300,
+				},
 				apps: [
 					{
-						name: 'webexpo-app-theme',
-						publicPath: '/webexpo-demo/wp-content/themes/twentyfifteen/webexpo-app-theme/',
+						name: 'webexpo-app-twentyfifteen',
+						publicPath: '/webexpo-demo/wp-content/themes/twentyfifteen/webexpo-app-twentyfifteen/',
 						proxy: {
 							target: 'http://192.168.64.5',
-							publicPath: '/webexpo-demo/wp-content/themes/twentyfifteen/webexpo-app-theme/',
+							publicPath: '/webexpo-demo/wp-content/themes/twentyfifteen/webexpo-app-twentyfifteen/',
 						},
 					},
 				],
