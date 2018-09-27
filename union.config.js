@@ -11,9 +11,6 @@ module.exports = ({ target }) => ({
 				outputMapper: {
 					js: 'js',
 				},
-				devServer: {
-					port: 3300,
-				},
 				proxy: {
 					port: 3300,
 				},

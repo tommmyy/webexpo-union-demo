@@ -1,18 +1,20 @@
+/**
+ * This is a naive implementation of deploying to the targeted Wordpress.
+ */
+
 // eslint-disable-next-line import/no-extraneous-dependencies
 const fs = require('fs-extra');
-const path = require('path');
+const { resolvePath } = require('./utils');
 
-const resolvePath = x => path.resolve(__dirname, '../', x);
+const WORDPRESS_PATH = resolvePath('../webexpo-demo/wp-content/themes/twentyfifteen/webexpo-app-twentyfifteen');
 
-const wordpressPath = resolvePath('../webexpo-demo/wp-content/themes/twentyfifteen/webexpo-app-twentyfifteen');
-
-console.log('🚀 Starting deploy to Wordpress 🚀');
+console.log('🚀 Starting a deploy to a Wordpress 🚀');
 
 console.log('Cleaning old files...');
-fs.emptyDirSync(wordpressPath);
+fs.emptyDirSync(WORDPRESS_PATH);
 
 console.log('Copying new files...');
-fs.copySync(resolvePath('./build/webexpo-app-twentyfifteen'), wordpressPath);
+fs.copySync(resolvePath('./build/webexpo-app-twentyfifteen'), WORDPRESS_PATH);
 
 console.log('🚀 Successfuly done. 🚀');
 
